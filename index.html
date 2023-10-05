@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atividade03</title>
+</head>
+
+<body>
+    <h2>Cadastro de Consulta Médica</h2>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Digite seu email aqui" required></td>
+                </tr>
+                <tr>
+
+                    <td> <label for="tel">Telefone:</label></td>
+                    <td><input type="tel" id="tel" name="tel" placeholder="Digite seu telefone aqui"></td>
+                </tr>
+                <tr>
+
+                    <td><label for="idade">Idade:</label></td>
+                    <td> <input type="number" id="idade" name="idade" min="18" max="100" required></td>
+                </tr>
+                <tr>
+
+                    <td> <label for="genero">Gênero:</label></td>
+                    <td> <select id="genero" name="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Informações da Consulta</legend>
+            <table>
+
+                <label>Escolha seu tipo de consulta:</label>
+                <tr>
+                    <td><input type="radio" id="fisio" name="consulta" value="fisio"></td>
+                    <td> <label for="fisio">Fisioterapia</label></td>
+                </tr>
+                <tr>
+                    <td> <input type="radio" id="oft" name="consulta" value="oft"></td>
+                    <td> <label for="oft">Oftalmologia</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="orto" name="consulta" value="orto"></td>
+                    <td><label for="orto">Ortopedia</label></td>
+                </tr>
+                <tr>
+
+                    <td> <input type="checkbox" id="lembrete" name="lembrete" value="sim"></td>
+                    <td><label for="lembrete">Desejo receber lembrete da consulta via email</label></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Informações de Atendimento</legend>
+            <table>
+                <tr>
+                    <td><label for="color">Cor da equipe de atendimento:</label></td>
+                    <td><input type="color" id="color" name="color" required></td>
+                </tr>
+                <tr>
+                    <td><label for="time">Selecione um horário para a consulta:</label></td>
+                    <td><input type="time" id="time" name="time" required></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Selecione uma data para a consulta:</label></td>
+                    <td><input type="date" id="date" name="date" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <table>
+            <tr>
+
+                <td><label for="range">Avalie nosso sistema de 1 à 10:</label></td>
+                <td><input type="range" id="range" name="range" min="1" max="10"></td>
+            </tr>
+
+
+
+        <td><input type="submit" value="Enviar"></td>
+        </table>
+    </form>
+</body>
+
+</html>
